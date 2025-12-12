@@ -71,6 +71,6 @@ OpenAI and Pinecone Accounts: You’ll need API keys to use these services. Inst
 Your Knowledge Source: The beauty of RAG is that you provide the data your chatbot learns from! Have your research paper (PDF) or other content type (text files, website URLs, company documents) ready.
 Don’t worry if you’re new to all of this! I’ll help guide you through setting up your environment along the way."""
 
-result = chain.invoke({'text':text})
+#result = chain.invoke({'text':text})
 
-print(result)
+chain.get_graph().print_ascii()
